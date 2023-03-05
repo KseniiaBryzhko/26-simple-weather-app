@@ -1,0 +1,73 @@
+/* 64 */
+body {
+  padding: 0;
+  margin: 0;
+  background: #313233;
+  color: #ffffff;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Krona One", sans-serif;
+}
+
+.weather {
+  background-color: #7a956b;
+  border-radius: 10px;
+  padding: 40px;
+  min-width: 650px;
+  min-height: 300px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.weather__loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather__loading img {
+  min-width: 50px;
+}
+
+.weather__icon img {
+  min-width: 75px;
+}
+
+.weather__header {
+  display: flex;
+}
+
+.weather__main {
+  flex: 1 1 auto;
+}
+
+.weather__city {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.weather__status {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.weather__temp {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.weather__feels-like {
+  font-size: 20px;
+}
+
+.weather__temp::after,
+.weather__feels-like::after {
+  display: inline-block;
+  margin-left: 5px;
+  content: "°C";
+}
